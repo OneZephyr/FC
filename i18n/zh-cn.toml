@@ -1,5 +1,0 @@
-[footer]
-    [footer.powered_by]
-        # 这里把中文翻译改为你想要的英文内容
-        # %s 会被自动替换为 Hugo 和 Blowfish 的链接
-        other = "Powered by %s & %s"
