@@ -17,7 +17,9 @@ theme = "blowfish"
   
   # --- 网站图标配置 ---
   # Blowfish 会自动在 static/ 目录下寻找这些文件
-  favicon = "favicon.ico"
+  favicon = "favicon.png"  
+  #favicon = "favicon.png"  # 改为 png 试试，或者保持 favicon.ico 但去掉斜杠
+  appleTouchIcon = "apple-touch-icon.png" # 让苹果设备也显示这个图标
 
   [params.author]
     name = "第一文明"
