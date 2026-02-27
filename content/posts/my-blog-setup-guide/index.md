@@ -1,11 +1,7 @@
-+++
-date = '2026-02-27T21:35:47+08:00'
-draft = false
-title = 'My Blog Setup Guide'
-+++
 ---
 title: "从零到一：我的高颜值数字花园搭建全记录"
-date: 2026-02-27
+date: 2026-02-27T21:35:47+08:00
+draft: false
 description: "记录使用 Trae Solo, Hugo (Blowfish), GitHub Pages 和 Cloudflare 打造极致静态博客的过程。"
 summary: "这不仅是一个博客，更是一个自动化的技术堡垒。从 AI 辅助开发到全球加速，我在这里记录了每一个踩坑与起飞的瞬间。"
 feature: "cover.jpg" # 记得在该文件夹下放一张封面图
@@ -39,9 +35,9 @@ categories: ["技术分享"]
 [appearance]
   colorScheme = "ocean"
   cardAlpha = 0.9
+```
 
-
-3. 持久化与加速
+### 3. 持久化与加速
 为了保证 fc.181861.xyz 在全球范围内秒开，我接入了 Cloudflare，并开启了 Always Online 和 Edge Cache。即便源站波动，缓存依然能让内容时刻在线。
 
 互动与功能
