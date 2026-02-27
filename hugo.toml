@@ -1,5 +1,5 @@
 baseURL = "https://fc.181861.xyz/"
-languageCode = "zh-CN"
+languageCode = "zh-cn"
 title = "第一文明"
 theme = "blowfish"
 
@@ -9,11 +9,51 @@ theme = "blowfish"
       unsafe = true
 
 [params]
-  description = "This is my Hugo site"
+  description = "这是我在 fc.181861.xyz 上的数字花园"
+  colorScheme = "ocean"     # 刚才选好的配色
+  showImageZoom = true      # 开启图片缩放
+  enableSearch = true       # 开启搜索
+  searchType = "fuse"    # 如果 Algolia 还没配好，可以先改回 "fuse"
+  
+  # --- 网站图标配置 ---
+  # Blowfish 会自动在 static/ 目录下寻找这些文件
+  favicon = "favicon.ico"
+
   [params.author]
     name = "第一文明"
-    
-[main]
-  # 确保这里指向你的图标
-  favicon = "favicon.ico"
-  emoji = "🖼️" # 如果没有图标，有些地方会显示这个 emoji
+    image = "profile.jpg"   # 放在 static/ 文件夹下
+    headline = "探索数字世界的边界"
+    links = [
+        { github = "https://github.com/OneZephyr" },
+    ]
+
+  [params.header]
+    showLogo = true
+    showMenu = true
+
+  [params.footer]
+    showCopyright = true
+    showPoweredBy = true # 这会配合你刚才在 footer.html 写的代码
+
+  [params.article]
+    showTableOfContents = true # 开启文章目录
+    showDate = true
+    showReadingTime = true
+
+# 搜索配置 (如果你用 Algolia)
+[params.search.algolia]
+  appId = "你的ID"
+  apiKey = "你的SearchKey"
+  indexName = "fc_blog"
+
+# 评论配置 (Giscus)
+[params.comments]
+  showComments = true
+  engine = "giscus"
+  [params.comments.giscus]
+    repo = "OneZephyr/FC"
+    repoId = "R_xxxxxxxx"
+    category = "Announcements"
+    categoryId = "DIC_xxxxxxxx"
+    mapping = "pathname"
+    theme = "preferred_color_scheme"
