@@ -1,0 +1,14 @@
+baseURL = "https://fc.181861.xyz/"
+languageCode = "zh-CN"
+title = "第一文明"
+theme = "blowfish"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  description = "This is my Hugo site"
+  [params.author]
+    name = "Your Name"
