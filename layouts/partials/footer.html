@@ -1,5 +1,6 @@
 <footer class="py-10 print:hidden">
   <div class="flex flex-col items-center justify-between md:flex-row">
+    
     <div class="flex flex-col items-center md:items-start">
       <span class="text-sm text-neutral-500 dark:text-neutral-400">
         &copy; {{ now.Format "2006" }} {{ .Site.Params.author.name | default .Site.Title }}
@@ -8,12 +9,18 @@
         本站已稳定运行: <span id="running_time"></span>
       </span>
     </div>
+
+    <div class="mt-4 md:mt-0">
+      <span class="text-xs text-neutral-400">
+        {{ i18n "footer.powered_by" (slice (safeHTML (printf `<a class="hover:text-primary-600" href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a>`)) (safeHTML (printf `<a class="hover:text-primary-600" href="https://github.com/nunocoracao/blowfish" target="_blank" rel="noopener noreferrer">Blowfish</a>`))) | safeHTML }}
+      </span>
+    </div>
+
   </div>
   
   <script>
     function updateRunningTime() {
-      // 确保日期格式正确：年, 月(0-11), 日
-      var startDate = new Date(2026,1, 27); 
+      var startDate = new Date(2026, 1, 27); // 你的建站日期
       var now = new Date();
       var diff = now - startDate;
       var days = Math.floor(diff / (1000 * 60 * 60 * 24));
