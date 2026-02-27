@@ -1,17 +1,45 @@
 <footer class="py-10 print:hidden">
-  <div class="flex flex-col items-center justify-between md:flex-row">
+  <div class="flex flex-col items-center justify-center">
+    <!-- 网站信息 -->
+    <div class="flex flex-col items-center mb-6">
+      <h3 class="text-lg font-semibold text-neutral-800 dark:text-neutral-200 mb-2">{{ .Site.Params.author.name | default .Site.Title }}</h3>
+      <p class="text-sm text-neutral-600 dark:text-neutral-400 text-center max-w-md">
+        {{ .Site.Params.description | default "探索数字世界的边界" }}
+      </p>
+    </div>
     
-    <div class="flex flex-col items-center md:items-start">
-      <span class="text-sm text-neutral-500 dark:text-neutral-400">
-        &copy; {{ now.Format "2006" }} {{ .Site.Params.author.name | default .Site.Title }}
-      </span>
-      <span class="text-xs text-neutral-400 mt-1">
-        本站已稳定运行: <span id="running_time"></span>
+    <!-- 运行时间 -->
+    <div class="flex items-center justify-center mb-6">
+      <span class="text-xs text-neutral-500 dark:text-neutral-400">
+        本站已稳定运行: <span id="running_time" class="font-medium text-primary-600 dark:text-primary-400"></span>
       </span>
     </div>
+    
+    <!-- 社交媒体链接 -->
+    {{ with .Site.Params.author.links }}
+    <div class="flex flex-wrap justify-center gap-4 mb-6">
+      {{ range $links := . }}
+        {{ range $name, $url := $links }}
+          <a
+            class="hover:text-primary-600 transition-colors text-neutral-500 dark:text-neutral-400"
+            href="{{ $url }}"
+            target="_blank"
+            aria-label="{{ $name | title }}"
+            title="{{ $name | title }}"
+            rel="me noopener noreferrer">
+            {{ partial "icon.html" $name }}
+          </a>
+        {{ end }}
+      {{ end }}
+    </div>
+    {{ end }}
 
-    <div class="mt-4 md:mt-0">
-      <span class="text-xs text-neutral-400">
+    <!-- 技术信息 -->
+    <div class="flex flex-col items-center">
+      <span class="text-xs text-neutral-500 dark:text-neutral-400 mb-2">
+        &copy; {{ now.Format "2006" }} {{ .Site.Params.author.name | default .Site.Title }}. All rights reserved.
+      </span>
+      <span class="text-xs text-neutral-500 dark:text-neutral-400">
         Powered by 
         <a class="hover:text-primary-600 transition-colors" href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> 
         & 
@@ -28,7 +56,8 @@
       var diff = now - startDate;
       var days = Math.floor(diff / (1000 * 60 * 60 * 24));
       var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      document.getElementById('running_time').innerHTML = days + " 天 " + hours + " 小时";
+      var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      document.getElementById('running_time').innerHTML = days + " 天 " + hours + " 小时 " + minutes + " 分钟";
     }
     setInterval(updateRunningTime, 1000);
     updateRunningTime();
