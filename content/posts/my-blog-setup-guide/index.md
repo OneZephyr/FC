@@ -10,6 +10,7 @@ description: "记录使用 Trae Solo, Hugo (Blowfish), GitHub Pages 和 Cloudfla
 summary: "这不仅是一个博客，更是一个自动化的技术堡垒。从 AI 辅助开发到全球加速，我在这里记录了每一个踩坑与起飞的瞬间。"
 feature: "cover.jpg" # 记得在该文件夹下放一张封面图
 showTableOfContents: true
+showComments: true
 tags: ["Hugo", "Trae", "Blog", "Cloudflare"]
 categories: ["技术分享"]
 ---

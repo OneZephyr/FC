@@ -1,0 +1,19 @@
+{{ if and (site.Params.comments.showComments) (eq site.Params.comments.engine "giscus") }}
+  <div id="giscus-container" class="mt-8"></div>
+  <script src="https://giscus.app/client.js"
+    data-repo="{{ site.Params.comments.giscus.repo }}"
+    data-repo-id="{{ site.Params.comments.giscus.repoId }}"
+    data-category="{{ site.Params.comments.giscus.category }}"
+    data-category-id="{{ site.Params.comments.giscus.categoryId }}"
+    data-mapping="{{ site.Params.comments.giscus.mapping | default "pathname" }}"
+    data-strict="{{ site.Params.comments.giscus.strict | default "0" }}"
+    data-reactions-enabled="{{ site.Params.comments.giscus.reactionsEnabled | default "1" }}"
+    data-emit-metadata="{{ site.Params.comments.giscus.emitMetadata | default "0" }}"
+    data-input-position="{{ site.Params.comments.giscus.inputPosition | default "bottom" }}"
+    data-theme="{{ site.Params.comments.giscus.theme | default "light" }}"
+    data-lang="{{ site.Params.comments.giscus.lang | default "zh-CN" }}"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async>
+  </script>
+{{ end }}

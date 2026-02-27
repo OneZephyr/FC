@@ -3,13 +3,16 @@ languageCode = "zh-cn"
 title = "第一文明"
 theme = "blowfish"
 
+[main]
+  googleAnalytics = "G-9X937R2LZK" # 填入你的 ID
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
 
 [params]
-  description = "这是我在 fc.181861.xyz 上的数字花园"
+  description = "在网站上的数字花园"
   colorScheme = "ocean"     # 刚才选好的配色
   showImageZoom = true      # 开启图片缩放
   enableSearch = true       # 开启搜索
@@ -22,7 +25,7 @@ theme = "blowfish"
   appleTouchIcon = "apple-touch-icon.png" # 让苹果设备也显示这个图标
 
   [params.author]
-    name = "OneZephyr"
+    name = "第一文明"
     image = "avatar.png" # 记得把你的头像放在 assets/ 目录下
     headline = "探索数字世界的边界 🚀"
     bio = "对世界充满好奇，正在记录我的技术探索之路。"
@@ -48,6 +51,7 @@ theme = "blowfish"
     showTableOfContents = true # 开启文章目录
     showDate = true
     showReadingTime = true
+    showComments = true # 开启评论功能
 
 # 搜索配置 (如果你用 Algolia)
 [params.search.algolia]
@@ -61,9 +65,9 @@ theme = "blowfish"
   engine = "giscus"
   [params.comments.giscus]
     repo = "OneZephyr/FC"
-    repoId = "R_xxxxxxxx"
+    repoId = "R_kgDORYuE4A"
     category = "Announcements"
-    categoryId = "DIC_xxxxxxxx"
+    categoryId = "DIC_kwDORYuE4M4C3VaY"
     mapping = "pathname"
     theme = "preferred_color_scheme"
 
