@@ -11,3 +11,26 @@ theme = "papermod"
     imageTitle = "第一文明"
     imageWidth = 150
     imageHeight = 150
+  [params.author]
+    name = "第一文明"
+    email = "contact@example.com"
+
+[[menu.main]]
+  name = "首页"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "关于"
+  url = "/about/"
+  weight = 2
+
+[[menu.main]]
+  name = "文章"
+  url = "/posts/"
+  weight = 3
+
+[[menu.main]]
+  name = "搜索"
+  url = "/search/"
+  weight = 4
