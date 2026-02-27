@@ -2,18 +2,18 @@
   <div class="flex flex-col items-center justify-between md:flex-row">
     <div class="flex flex-col items-center md:items-start">
       <span class="text-sm text-neutral-500 dark:text-neutral-400">
-        &copy; {{ now.Format "2006" }} {{ .Site.Author.name }}
+        &copy; {{ now.Format "2006" }} {{ .Site.Params.author.name | default .Site.Title }}
       </span>
       <span id="busuanzi_container_site_pv" class="text-xs text-neutral-400 mt-1">
         本站已稳定运行: <span id="running_time"></span>
       </span>
     </div>
   </div>
-
+  
   <script>
     function updateRunningTime() {
-      // 在这里填入你网站开始运行的日期 (年, 月-1, 日)
-      var startDate = new Date(2026, 1, 27); 
+      // 确保日期格式正确：年, 月(0-11), 日
+      var startDate = new Date(2026,1, 27); 
       var now = new Date();
       var diff = now - startDate;
       var days = Math.floor(diff / (1000 * 60 * 60 * 24));
