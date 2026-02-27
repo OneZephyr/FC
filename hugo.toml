@@ -12,3 +12,8 @@ theme = "blowfish"
   description = "This is my Hugo site"
   [params.author]
     name = "第一文明"
+    
+[main]
+  # 确保这里指向你的图标
+  favicon = "favicon.ico"
+  emoji = "🖼️" # 如果没有图标，有些地方会显示这个 emoji
