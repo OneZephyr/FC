@@ -155,12 +155,31 @@
 </div>
 
 <article class="first-entry"> 
+<figure class="entry-cover">
+            <img loading="lazy"
+                srcset='https://fc.181861.xyz/posts/my-blog-setup-guide/cover_hu_86e42050d56d6e16.jpg 360w,https://fc.181861.xyz/posts/my-blog-setup-guide/cover_hu_5426827ba3733177.jpg 480w,https://fc.181861.xyz/posts/my-blog-setup-guide/cover_hu_e2498d7a8b77696f.jpg 720w,https://fc.181861.xyz/posts/my-blog-setup-guide/cover_hu_ddf75198b9cd7e9a.jpg 1080w,https://fc.181861.xyz/posts/my-blog-setup-guide/cover_hu_cea9018527809847.jpg 1500w,https://fc.181861.xyz/posts/my-blog-setup-guide/cover.jpg 2730w'
+                src="https://fc.181861.xyz/posts/my-blog-setup-guide/cover.jpg"
+                sizes="(min-width: 768px) 720px, 100vw"
+                width="2730" height="1535"
+                alt="数字花园搭建">
+</figure>
   <header class="entry-header">
     <h2 class="entry-hint-parent">从零到一：我的高颜值数字花园搭建全记录
     </h2>
   </header>
   <div class="entry-content">
-    <p>这不仅是一个博客，更是一个自动化的技术堡垒。从 AI 辅助开发到全球加速，我在这里记录了每一个踩坑与起飞的瞬间。</p>
+    <p>从零到一：我的高颜值数字花园搭建全记录 缘起：为什么选择这条路？ 在这个信息爆炸的时代，拥有一个完全属于自己的数字空间变得越来越重要。我不满足于社交媒体的碎片化表达，也不希望被平台的算法所左右。于是，我决定搭建一个属于自己的个人博客，一个可以自由表达、永久保存的数字花园。
+经过多方调研，我最终选择了以下技术栈：
+Hugo (PaperMod)：静态网站生成器中的性能王者，配合PaperMod主题，既美观又高效 Trae Solo：AI辅助开发工具，让复杂的配置变得简单直观 GitHub Pages：免费的静态网站托管服务，与代码版本控制无缝集成 Cloudflare：全球CDN加速，提升网站访问速度和安全性 核心架构设计 技术栈选择理由 Hugo：作为Go语言编写的静态网站生成器，Hugo的构建速度是其他工具的数倍甚至数十倍。对于内容创作者来说，快速的预览和构建体验至关重要。
+PaperMod主题：选择PaperMod主题是因为它的设计简洁现代，响应式布局完美适配各种设备，而且配置灵活，支持多种功能扩展。
+Trae Solo：AI辅助开发工具极大地提高了开发效率，尤其是在配置文件的编写和调试方面，让我能够更专注于内容创作。
+GitHub Pages：作为代码托管平台的附加服务，GitHub Pages不仅免费，而且与Git版本控制系统完美集成，让部署变得自动化和可追踪。
+Cloudflare：通过Cloudflare的全球CDN网络，我的网站可以在全球范围内实现快速访问，同时还提供了DDoS保护、SSL证书等安全功能。
+搭建过程详解 1. 环境搭建 首先，我需要在本地搭建开发环境：
+# 安装Hugo（扩展版，支持WebP等格式） brew install hugo --with-extended # 验证安装 hugo version # 创建新的Hugo站点 hugo new site my-blog cd my-blog # 初始化Git仓库 git init 2. 主题配置 选择并配置PaperMod主题：
+# 添加PaperMod主题作为子模块 git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod # 配置主题 echo &#39;theme = &#34;PaperMod&#34;&#39; &gt;&gt; config.toml 在config.toml中添加基本配置：
+baseURL = &#34;https://fc.181861.xyz/&#34; languageCode = &#34;zh-cn&#34; title = &#34;第一文明&#34; [params] [params.profileMode] title = &#34;第一文明&#34; subtitle = &#34;欢迎来到第一文明的数字花园&#34; imageUrl = &#34;/assets/avatar.png&#34; imageTitle = &#34;第一文明&#34; imageWidth = 150 imageHeight = 150 [params.author] name = &#34;第一文明&#34; email = &#34;contact@example.com&#34; [[menu.main]] name = &#34;首页&#34; url = &#34;/&#34; weight = 1 [[menu.main]] name = &#34;关于&#34; url = &#34;/about/&#34; weight = 2 [[menu.main]] name = &#34;文章&#34; url = &#34;/posts/&#34; weight = 3 [[menu.main]] name = &#34;搜索&#34; url = &#34;/search/&#34; weight = 4 3. 自动化部署配置 为了实现源码即发布的流程，我配置了GitHub Actions：
+...</p>
   </div>
   <footer class="entry-footer"><span title='2026-02-27 21:35:47 +0800 CST'>February 27, 2026</span>&nbsp;·&nbsp;<span>map[email:contact@example.com name:第一文明]</span></footer>
   <a class="entry-link" aria-label="post link to 从零到一：我的高颜值数字花园搭建全记录" href="https://fc.181861.xyz/posts/my-blog-setup-guide/"></a>

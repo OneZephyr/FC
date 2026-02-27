@@ -15,7 +15,7 @@
       <link>https://fc.181861.xyz/posts/my-blog-setup-guide/</link>
       <pubDate>Fri, 27 Feb 2026 21:35:47 +0800</pubDate><author>contact@example.com (第一文明)</author>
       <guid>https://fc.181861.xyz/posts/my-blog-setup-guide/</guid>
-      <description>记录使用 Trae Solo, Hugo (Blowfish), GitHub Pages 和 Cloudflare 打造极致静态博客的过程。</description>
+      <description>详细记录使用 Trae Solo, Hugo (PaperMod), GitHub Pages 和 Cloudflare 打造极致静态博客的全过程，从环境搭建到性能优化。</description>
     </item>
   </channel>
 </rss>
