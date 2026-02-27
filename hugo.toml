@@ -51,6 +51,9 @@ googleAnalytics = "G-9X937R2LZK" # 填入你的 ID
     showReadingTime = true
     showComments = true # 开启评论功能
 
+  [params.list]
+    showSummary = true # 开启文章摘要
+
 # 搜索配置 (如果你用 Algolia)
 [params.search.algolia]
   appId = "WKMQOJ54VU"
