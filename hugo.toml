@@ -59,3 +59,8 @@ theme = "blowfish"
     categoryId = "DIC_xxxxxxxx"
     mapping = "pathname"
     theme = "preferred_color_scheme"
+
+[params.homepage]
+  layout = "background" # 核心：启用背景布局，支持动态SVG全屏展示
+  layoutBackgroundBlur = true # 可选：给背景添加模糊效果，提升前景文字可读性
+  homepageImage = "/background.svg" # 关联动态SVG背景图
