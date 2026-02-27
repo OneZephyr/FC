@@ -2,9 +2,7 @@ baseURL = "https://fc.181861.xyz/"
 languageCode = "zh-cn"
 title = "第一文明"
 theme = "blowfish"
-
-[main]
-  googleAnalytics = "G-9X937R2LZK" # 填入你的 ID
+googleAnalytics = "G-9X937R2LZK" # 填入你的 ID
 
 [markup]
   [markup.goldmark]
@@ -55,9 +53,10 @@ theme = "blowfish"
 
 # 搜索配置 (如果你用 Algolia)
 [params.search.algolia]
-  appId = "你的ID"
-  apiKey = "你的SearchKey"
+  appId = "WKMQOJ54VU"
+  apiKey = "d169f72b7f178d57703769c7740a7129" # 注意：这里填Search Key，不是Admin Key
   indexName = "fc_blog"
+  showOnHeader = true
 
 # 评论配置 (Giscus)
 [params.comments]

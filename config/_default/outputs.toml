@@ -1,0 +1,2 @@
+[home]
+  outputs = ["HTML", "RSS", "JSON"]

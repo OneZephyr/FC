@@ -3,15 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/posts/my-blog-setup-guide/</loc>
+    <loc>https://fc.181861.xyz/posts/my-blog-setup-guide/</loc>
     <lastmod>2026-02-27T21:35:47+08:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-02-27T21:35:47+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://fc.181861.xyz/posts/</loc>
     <lastmod>2026-02-27T21:35:47+08:00</lastmod>
   </url>
 </urlset>
