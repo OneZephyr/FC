@@ -11,4 +11,4 @@ theme = "blowfish"
 [params]
   description = "This is my Hugo site"
   [params.author]
-    name = "Your Name"
+    name = "第一文明"
