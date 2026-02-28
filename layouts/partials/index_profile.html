@@ -2,7 +2,7 @@
     <div class="latest-posts">
         <h2 style="display: flex; align-items: center;">最新文章 <a href="{{ "index.xml" | absURL }}" title="RSS订阅" style="color: inherit; margin-left: 8px; transition: color 0.3s ease; display: inline-flex; align-items: center;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg></a></h2>
         <div class="latest-posts-list">
-            {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections | first 3 -}}
+            {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections -}}
             {{- range $pages -}}
             <div class="latest-post-item">
                 {{- $post := . -}}
