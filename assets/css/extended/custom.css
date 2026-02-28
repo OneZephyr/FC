@@ -140,10 +140,28 @@ html {
     scroll-behavior: smooth;
 }
 
+/* 全局盒模型设置 */
+* {
+    box-sizing: border-box;
+}
+
+/* 调整内容区域垂直位置 */
+.main {
+    padding: 0 var(--gap);
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    margin-top: -1rem;
+}
+
+/* 调整profile区域 */
+.profile {
+    margin-top: 0;
+    padding-top: 0;
+}
+
 /* 最新文章样式 */
 .latest-posts {
-    margin-top: 2rem;
-    padding: 1.5rem;
+    margin: 0;
+    padding: 0;
     background: transparent;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
@@ -154,22 +172,25 @@ html {
 }
 
 .latest-posts h2 {
-    margin-bottom: 1.5rem;
+    margin: 0 0 1rem 0;
     font-size: 1.5rem;
     color: var(--content);
     text-align: left;
+    line-height: 1.2;
 }
 
 .latest-posts-list {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
 .latest-post-item {
     display: flex;
-    gap: 1rem;
-    padding: 0.75rem;
+    gap: 0.75rem;
+    padding: 0.5rem;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(8px);
@@ -178,6 +199,42 @@ html {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
     align-items: center;
+    margin: 0;
+}
+
+/* 调整最新文章内容区域 */
+.latest-post-content {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+}
+
+.latest-post-content h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
+
+.latest-post-summary {
+    margin: 0 0 0.75rem 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.latest-post-meta {
+    margin: 0;
+    gap: 0.75rem;
+}
+
+/* 调整最新文章图片区域 */
+.latest-post-image {
+    flex-shrink: 0;
+    width: 180px;
+    height: 120px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin: 0;
 }
 
 .latest-post-item:hover {
@@ -192,12 +249,13 @@ html {
 
 .latest-post-image {
     flex-shrink: 0;
-    width: 200px;
-    height: 130px;
+    width: 280px;
+    height: 120px;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     margin-left: -0rem;
+    margin-right: 0.4rem;
 }
 
 .latest-post-image img {
@@ -581,6 +639,10 @@ html {
     
     #menu {
         margin-top: 10px;
+    }
+    
+    .main {
+        margin-top: -1rem;
     }
     
     .latest-post-item {
