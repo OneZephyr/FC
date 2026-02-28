@@ -562,6 +562,17 @@ html {
 }
 
 /* 响应式布局优化 */
+/* RSS链接样式 */
+.latest-posts h2 a {
+    color: var(--content);
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.latest-posts h2 a:hover {
+    color: var(--primary);
+    transform: scale(1.1);
+}
+
 @media (max-width: 768px) {
     .nav {
         flex-direction: column;
@@ -594,5 +605,21 @@ html {
     
     .footer-info {
         width: 100%;
+    }
+    
+    /* 响应式调整RSS图标 */
+    .latest-posts h2 {
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .latest-posts h2 a {
+        margin-left: 8px !important;
+    }
+    
+    .latest-posts h2 svg {
+        width: 18px;
+        height: 18px;
     }
 }
