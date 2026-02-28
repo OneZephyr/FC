@@ -1,0 +1,590 @@
+/* 导入字体 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+/* 字体美化 */
+body {
+    font-family: 'Noto Sans SC', 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', 'Noto Sans SC', sans-serif;
+    line-height: 1.2;
+}
+
+/* 色彩方案优化 */
+:root {
+    --primary: #165DFF;
+    --secondary: #69B1FF;
+    --accent: #52C41A;
+    --theme: #f8f9fa;
+    --entry: #ffffff;
+    --content: #333333;
+    --code-block-bg: #f5f5f5;
+    --code-bg: #f0f0f0;
+    --border: #e0e0e0;
+}
+
+[data-theme="dark"] {
+    --primary: #69B1FF;
+    --secondary: #165DFF;
+    --accent: #73D13D;
+    --theme: #1a1a1a;
+    --entry: #2d2d2d;
+    --content: #e0e0e0;
+    --code-block-bg: #333333;
+    --code-bg: #444444;
+    --border: #333333;
+}
+
+/* 背景设计 */
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    transition: all 0.3s ease;
+}
+
+[data-theme="dark"] body {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+/* 毛玻璃效果与圆角 */
+.header {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: none;
+}
+
+/* 导航栏样式优化 */
+.nav {
+    max-width: calc(var(--nav-width) + var(--gap) * 2);
+}
+
+#menu {
+    gap: var(--gap);
+}
+
+#menu a {
+    transition: all 0.2s ease;
+}
+
+#menu a:hover {
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+/* 卡片样式优化 */
+.post-entry {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.post-entry:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* 代码块样式优化 */
+pre {
+    border-radius: 6px;
+}
+
+/* 按钮样式优化 */
+button {
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* 图片样式优化 */
+img {
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.profile img {
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    width: 100px;
+    height: 100px;
+}
+
+.profile img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 动画效果 */
+.profile {
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 平滑滚动 */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 最新文章样式 */
+.latest-posts {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: transparent;
+    border-radius: 8px;
+    box-shadow: none;
+    text-align: left;
+}
+
+.latest-posts h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--content);
+    text-align: left;
+}
+
+.latest-posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.latest-post-item {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: transparent;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.latest-post-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.latest-post-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.latest-post-image {
+    flex-shrink: 0;
+    width: 250px;
+    height: 100px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.latest-post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    border-radius: 8px;
+}
+
+.latest-post-item:hover .latest-post-image img {
+    transform: scale(1.1);
+}
+
+.latest-post-content h3 {
+    margin: 0 0 0.75rem 0;
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+.latest-post-content h3 a {
+    color: var(--content);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.latest-post-content h3 a:hover {
+    color: var(--primary);
+}
+
+.latest-post-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.85rem;
+    color: var(--secondary);
+}
+
+.latest-post-summary {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--content);
+    opacity: 0.8;
+}
+
+.latest-post-item:hover .latest-post-image img {
+    transform: scale(1.05);
+}
+
+.latest-post-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.latest-post-content h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    line-height: 1.3;
+}
+
+.latest-post-content h3 a {
+    color: var(--content);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.latest-post-content h3 a:hover {
+    color: var(--primary);
+}
+
+.latest-post-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    color: var(--secondary);
+    flex-wrap: wrap;
+}
+
+.post-reading-time,
+.post-word-count {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    background: var(--theme);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    transition: all 0.2s ease;
+}
+
+.post-reading-time:hover,
+.post-word-count:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.post-date {
+    display: inline-block;
+}
+
+.post-categories {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.post-categories a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+    background: var(--theme);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    transition: all 0.2s ease;
+}
+
+.post-categories a:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.latest-post-summary {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--content);
+    opacity: 0.8;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.profile_inner {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: var(--entry);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile-content img {
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+}
+
+.profile-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.profile-text h1 {
+    font-size: 1.2rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.profile-text span {
+    font-size: 0.9rem;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.profile-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.profile-buttons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.profile-buttons .button {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.75rem;
+}
+
+.profile-links .social-icons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.profile-links .social-icons a {
+    font-size: 0.9rem;
+}
+
+.footer-profile {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: var(--entry);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.footer-profile-content {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-profile-content img {
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.footer-profile-text {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
+}
+
+.footer-profile-text h1 {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.footer-profile-text span {
+    font-size: 0.8rem;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.footer-profile-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-profile-links .social-icons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footer-profile-links .social-icons a {
+    font-size: 0.8rem;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+    background: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-profile img {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.footer-profile-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.footer-profile-text h1 {
+    font-size: 0.8rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.footer-profile-text span {
+    font-size: 0.7rem;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.footer-profile-links {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.footer-profile-links .social-icons {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+}
+
+.footer-top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-profile img {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.footer-profile-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--content);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-profile-name:hover {
+    color: var(--primary);
+}
+
+.footer-bottom {
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.footer-info {
+    font-size: 0.8rem;
+}
+
+/* 响应式布局优化 */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #menu {
+        margin-top: 10px;
+    }
+    
+    .latest-post-item {
+        flex-direction: column;
+    }
+    
+    .latest-post-image {
+        width: 100%;
+        height: 150px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .footer-profile {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .footer-info {
+        width: 100%;
+    }
+}

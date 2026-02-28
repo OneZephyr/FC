@@ -1,12 +1,12 @@
-baseURL = "https://fc.181861.xyz/"
+baseURL = "http://localhost:1313/"
 languageCode = "zh-cn"
 title = "第一文明"
 theme = "papermod"
 
 [params]
   [params.profileMode]
+    enabled = true
     title = "第一文明"
-    subtitle = "欢迎来到第一文明的数字花园"
     imageUrl = "/assets/avatar.png"
     imageTitle = "第一文明"
     imageWidth = 150
@@ -14,6 +14,25 @@ theme = "papermod"
   [params.author]
     name = "第一文明"
     email = "contact@example.com"
+  ShowFullText = false
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
+  [params.EditPost]
+    URL = "https://github.com/username/repo/edit/main/content/"
+    Text = "编辑此页"
+    appendFilePath = true
+  showToc = true
+  TocOpen = true
+  mainSections = ["posts"]
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/example"
+  [[params.socialIcons]]
+    name = "envelope"
+    url = "mailto:contact@example.com"
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
 
 [[menu.main]]
   name = "首页"
@@ -34,3 +53,8 @@ theme = "papermod"
   name = "搜索"
   url = "/search/"
   weight = 4
+
+[[menu.main]]
+  name = "归档"
+  url = "/archives/"
+  weight = 5

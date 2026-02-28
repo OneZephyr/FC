@@ -1,0 +1,60 @@
+<div class="profile">
+    <div class="latest-posts">
+        <h2>最新文章</h2>
+        <div class="latest-posts-list">
+            {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections | first 3 -}}
+            {{- range $pages -}}
+            <div class="latest-post-item">
+                {{- $post := . -}}
+                <div class="latest-post-content">
+                    <h3><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h3>
+                    {{- if not (.Param "hideSummary") -}}
+                    <div class="latest-post-summary">
+                        <p>{{ substr (.Summary | plainify | htmlUnescape) 0 100 }}{{ if .Truncated }}...{{ end }}</p>
+                    </div>
+                    {{- end -}}
+                    <div class="latest-post-meta">
+                        <span class="post-date">{{ .Date.Format "2006-01-02" }}</span>
+                        {{- if .Params.categories -}}
+                        <span class="post-categories">
+                            {{- range .Params.categories -}}
+                            <a href="{{ "categories/" | absURL }}{{ . | urlize }}" rel="category tag">{{ . }}</a>
+                            {{- end -}}
+                        </span>
+                        {{- end -}}
+                        {{- if .ReadingTime -}}
+                        <span class="post-reading-time">
+                            {{ .ReadingTime }} 分钟阅读
+                        </span>
+                        {{- end -}}
+                        {{- if .WordCount -}}
+                        <span class="post-word-count">
+                            {{ .WordCount }} 字
+                        </span>
+                        {{- end -}}
+                    </div>
+                </div>
+                {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false -}}
+                {{- if not $isHidden -}}
+                {{- with .Params.cover -}}
+                <div class="latest-post-image">
+                    <a href="{{ $post.Permalink }}" aria-label="{{ $post.Title }}">
+                        {{- if (not (urls.Parse .image).IsAbs) -}}
+                        {{- $cover := $post.Resources.Get .image -}}
+                        {{- if $cover -}}
+                        <img src="{{ $cover.Permalink }}" alt="{{ .alt | default $post.Title }}">
+                        {{- else -}}
+                        <img src="{{ .image | absURL }}" alt="{{ .alt | default $post.Title }}">
+                        {{- end -}}
+                        {{- else -}}
+                        <img src="{{ .image | absURL }}" alt="{{ .alt | default $post.Title }}">
+                        {{- end -}}
+                    </a>
+                </div>
+                {{- end -}}
+                {{- end -}}
+            </div>
+            {{- end -}}
+        </div>
+    </div>
+
