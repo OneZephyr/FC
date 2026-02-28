@@ -1,5 +1,28 @@
-/* 导入字体 */
-@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai:wght@300;400;500;600;700&display=swap');
+/* 导入本地字体 */
+@font-face {
+    font-family: 'LXGW WenKai';
+    src: url('/fonts/LXGWWenKai-Regular.woff2') format('woff2'),
+         url('/fonts/LXGWWenKai-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'), local('Inter-Regular'), sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans SC';
+    src: local('Noto Sans SC'), local('NotoSansSC-Regular'), sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 @font-face {
     font-family: 'Smiley Sans';
@@ -9,7 +32,9 @@
     font-display: swap;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+/* 本地字体回退方案 */
+/* Inter字体使用系统无衬线字体作为回退 */
+/* Noto Sans SC使用系统中文字体作为回退 */
 
 /* 字体美化 */
 body {
