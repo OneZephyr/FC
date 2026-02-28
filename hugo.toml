@@ -6,6 +6,9 @@ theme = "papermod"
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [params]
   [params.profileMode]
     enabled = true

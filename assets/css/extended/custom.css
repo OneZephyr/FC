@@ -1,4 +1,6 @@
 /* 导入字体 */
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai:wght@300;400;500;600;700&display=swap');
+
 @font-face {
     font-family: 'Smiley Sans';
     src: url('/fonts/SmileySans-Oblique.woff2') format('woff2');
@@ -11,18 +13,18 @@
 
 /* 字体美化 */
 body {
-    font-family: 'Smiley Sans', 'Noto Sans SC', 'Inter', sans-serif;
+    font-family: 'LXGW WenKai', 'Noto Sans SC', 'Inter', sans-serif;
     line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Smiley Sans', 'Inter', 'Noto Sans SC', sans-serif;
+    font-family: 'LXGW WenKai', 'Inter', 'Noto Sans SC', sans-serif;
     line-height: 1.2;
 }
 
-/* 确保所有文本元素都使用得意黑字体 */
+/* 确保所有文本元素都使用霞鹜文楷字体 */
 p, a, span, li, ul, ol, blockquote, pre, code, table, th, td, input, button, textarea {
-    font-family: 'Smiley Sans', 'Noto Sans SC', 'Inter', sans-serif;
+    font-family: 'LXGW WenKai', 'Noto Sans SC', 'Inter', sans-serif;
 }
 
 /* 色彩方案优化 */
@@ -66,6 +68,8 @@ body {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: none;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 /* 导航栏样式优化 */
