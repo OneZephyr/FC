@@ -434,7 +434,8 @@ html {
     text-overflow: ellipsis;
 }
 
-/* 文章页面双列布局 */
+/* 文章页面双列布局 - 暂时禁用 */
+/* 
 body:not(.list) .post-content {
     column-count: 2;
     column-gap: 2rem;
@@ -488,6 +489,7 @@ body:not(.list) .post-content img {
         column-gap: 0;
     }
 }
+*/
 
 
 

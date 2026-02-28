@@ -39,6 +39,7 @@ theme = "papermod"
   [[params.socialIcons]]
     name = "rss"
     url = "/index.xml"
+  comments = true
 
 [[menu.main]]
   name = "首页"
@@ -69,3 +70,14 @@ theme = "papermod"
   name = "关于"
   url = "/about/"
   weight = 6
+
+[related]
+  includeNewer = false
+  threshold = 80
+  toLower = false
+  [[related.include]]
+    key = "tags"
+    weight = 100
+  [[related.include]]
+    key = "categories"
+    weight = 50

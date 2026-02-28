@@ -18,6 +18,13 @@
       <description>测试评论框是否在所有文章页面中显示</description>
     </item>
     <item>
+      <title>新测试文章</title>
+      <link>http://localhost:1313/posts/new-test/</link>
+      <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate><author>contact@example.com (第一文明)</author>
+      <guid>http://localhost:1313/posts/new-test/</guid>
+      <description>测试评论框是否能在新文章中显示</description>
+    </item>
+    <item>
       <title>测试评论系统</title>
       <link>http://localhost:1313/posts/test-comments/</link>
       <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate><author>contact@example.com (第一文明)</author>
