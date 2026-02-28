@@ -6,6 +6,8 @@ tags:
   - 电影
   - 科幻
   - 诺兰
+series:
+  - 电影评论
 description: "深度解析克里斯托弗·诺兰的科幻杰作《星际穿越》，探讨其中的科学理论与人文关怀。"
 cover:
   image: "cover.jpg"

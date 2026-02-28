@@ -40,21 +40,26 @@ theme = "papermod"
   weight = 1
 
 [[menu.main]]
-  name = "关于"
-  url = "/about/"
+  name = "文章"
+  url = "/posts/"
   weight = 2
 
 [[menu.main]]
-  name = "文章"
-  url = "/posts/"
+  name = "系列"
+  url = "/series/"
   weight = 3
-
-[[menu.main]]
-  name = "搜索"
-  url = "/search/"
-  weight = 4
 
 [[menu.main]]
   name = "归档"
   url = "/archives/"
+  weight = 4
+
+[[menu.main]]
+  name = "搜索"
+  url = "/search/"
   weight = 5
+
+[[menu.main]]
+  name = "关于"
+  url = "/about/"
+  weight = 6

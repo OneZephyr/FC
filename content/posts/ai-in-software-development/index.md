@@ -6,6 +6,8 @@ tags:
   - IT
   - 人工智能
   - 软件开发
+series:
+  - 人工智能与技术
 description: "探讨人工智能技术如何改变传统的软件开发流程，以及未来的发展趋势。"
 cover:
   image: "cover.jpg"

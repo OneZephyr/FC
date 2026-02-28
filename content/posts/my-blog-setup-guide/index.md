@@ -7,6 +7,8 @@ tags:
   - Trae
   - Blog
   - Cloudflare
+series:
+  - 技术分享
 description: "详细记录使用 Trae Solo, Hugo (PaperMod), GitHub Pages 和 Cloudflare 打造极致静态博客的全过程，从环境搭建到性能优化。"
 cover:
   image: "cover.jpg"

@@ -378,6 +378,27 @@ html {
     border-color: var(--primary);
 }
 
+.post-series {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.post-series a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+    background: var(--theme);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    transition: all 0.2s ease;
+}
+
+.post-series a:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
 .latest-post-summary {
     font-size: 0.9rem;
     line-height: 1.5;

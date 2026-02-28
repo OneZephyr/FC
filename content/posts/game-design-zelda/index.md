@@ -6,6 +6,8 @@ tags:
   - 游戏
   - 塞尔达传说
   - 开放世界
+series:
+  - 游戏设计
 description: "深度分析《塞尔达传说：王国之泪》的游戏设计理念，探讨其如何重新定义开放世界游戏。"
 cover:
   image: "cover.jpg"

@@ -6,6 +6,8 @@ tags:
   - 旅行
   - 日本
   - 文化
+series:
+  - 旅行攻略
 description: "分享日本旅行的实用攻略，从东京的现代繁华到京都的传统文化，带你体验不一样的日本。"
 cover:
   image: "cover.jpg"

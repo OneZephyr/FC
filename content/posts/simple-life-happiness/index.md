@@ -6,6 +6,8 @@ tags:
   - 生活
   - 幸福
   - 极简主义
+series:
+  - 生活哲学
 description: "在这个快节奏的时代，如何通过简单生活找到内心的平静与幸福。"
 cover:
   image: "cover.jpg"
