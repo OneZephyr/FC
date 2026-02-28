@@ -22,7 +22,11 @@
             <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}" height="24" width="24" />
             {{- end }}
             {{- end }}
-            <a href="https://github.com/example" rel="noopener noreferrer" target="_blank" class="footer-profile-name">Zephyr</a>
+            {{- with site.Params.social.github }}
+            <a href="{{ . }}" rel="noopener noreferrer" target="_blank" class="footer-profile-name">{{ site.Params.profileMode.name | default "Zephyr" }}</a>
+            {{- else }}
+            <span class="footer-profile-name">{{ site.Params.profileMode.name | default "Zephyr" }}</span>
+            {{- end }}
             {{- end }}
         </div>
     </div>
