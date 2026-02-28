@@ -3,6 +3,9 @@ languageCode = "zh-cn"
 title = "第一文明"
 theme = "papermod"
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [params]
   [params.profileMode]
     enabled = true
