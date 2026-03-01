@@ -341,6 +341,7 @@ html {
     color: var(--content);
     text-decoration: none;
     transition: color 0.2s ease;
+    font-size: 1.5rem;
 }
 
 .latest-post-content h3 a:hover {
@@ -382,6 +383,7 @@ html {
     color: var(--content);
     text-decoration: none;
     transition: color 0.2s ease;
+    font-size: 1.5rem;
 }
 
 .latest-post-content h3 a:hover {
