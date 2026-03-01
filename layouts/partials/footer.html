@@ -39,6 +39,9 @@
                 {{- end }}
             </span>
         </div>
+        <div style="text-align: center; margin-bottom: 8px;">
+            <span id="uptime" style="font-size: 0.85rem; color: var(--secondary);"></span>
+        </div>
         <div style="text-align: center;">
             {{- if not site.Params.footer.hideCopyright }}
             {{- if site.Copyright }}
@@ -60,6 +63,34 @@
                 <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
             </span>
         </div>
+
+        <script>
+            // 网站启动时间（可以根据实际部署时间修改）
+            const startTime = new Date('2026-01-01T00:00:00Z');
+            
+            function updateUptime() {
+                const now = new Date();
+                const diff = now - startTime;
+                
+                // 计算天、小时、分钟、秒
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+                
+                // 格式化显示
+                const uptimeElement = document.getElementById('uptime');
+                if (uptimeElement) {
+                    uptimeElement.textContent = `已运行: ${days}天${hours}小时${minutes}分钟${seconds}秒`;
+                }
+            }
+            
+            // 初始更新
+            updateUptime();
+            
+            // 每秒更新一次
+            setInterval(updateUptime, 1000);
+        </script>
     </div>
 </footer>
 {{- end }}
