@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>游戏 on 第一文明</title>
-    <link>https://fc.181861.xyz/tags/%E6%B8%B8%E6%88%8F/</link>
+    <link>http://localhost:1358/tags/%E6%B8%B8%E6%88%8F/</link>
     <description>Recent content in 游戏 on 第一文明</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>zh-cn</language>
     <managingEditor>contact@example.com (第一文明)</managingEditor>
     <webMaster>contact@example.com (第一文明)</webMaster>
     <lastBuildDate>Thu, 26 Feb 2026 16:00:00 +0800</lastBuildDate>
-    <atom:link href="https://fc.181861.xyz/tags/%E6%B8%B8%E6%88%8F/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1358/tags/%E6%B8%B8%E6%88%8F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>塞尔达传说：王国之泪 - 开放世界游戏设计的新高度</title>
-      <link>https://fc.181861.xyz/posts/game-design-zelda/</link>
+      <link>http://localhost:1358/posts/game-design-zelda/</link>
       <pubDate>Thu, 26 Feb 2026 16:00:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
-      <guid>https://fc.181861.xyz/posts/game-design-zelda/</guid>
+      <guid>http://localhost:1358/posts/game-design-zelda/</guid>
       <description>深度分析《塞尔达传说：王国之泪》的游戏设计理念，探讨其如何重新定义开放世界游戏。</description>
     </item>
   </channel>

@@ -87,19 +87,32 @@ body {
     background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
 }
 
-/* 毛玻璃效果与圆角 */
+/* iOS风格岛样式 */
 .header {
-    background: transparent;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-bottom: none;
-    border-radius: 0 0 12px 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 90%;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+[data-theme="dark"] .header {
+    background: rgba(26, 26, 26, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* 导航栏样式优化 */
 .nav {
-    max-width: calc(var(--nav-width) + var(--gap) * 2);
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    line-height: 60px;
 }
 
 .logo a {
@@ -197,7 +210,7 @@ html {
 .main {
     padding: 0 var(--gap);
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
-    margin-top: 8rem;
+    margin-top: 4rem;
 }
 
 /* 调整profile区域 */
@@ -760,17 +773,26 @@ body:not(.list) .post-content img {
 }
 
 @media (max-width: 768px) {
+    .header {
+        margin: 10px auto;
+        max-width: 95%;
+        border-radius: 16px;
+    }
+    
     .nav {
         flex-direction: column;
         align-items: center;
+        line-height: 50px;
+        padding: 0 10px;
     }
     
     #menu {
         margin-top: 10px;
+        margin-bottom: 10px;
     }
     
     .main {
-        margin-top: -1rem;
+        margin-top: 2rem;
     }
     
     .latest-post-item {

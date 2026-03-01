@@ -2,61 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>第一文明</title>
-    <link>https://fc.181861.xyz/</link>
+    <link>http://localhost:1358/</link>
     <description>Recent content on 第一文明</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>zh-cn</language>
     <managingEditor>contact@example.com (第一文明)</managingEditor>
     <webMaster>contact@example.com (第一文明)</webMaster>
     <lastBuildDate>Sat, 28 Feb 2026 10:00:00 +0800</lastBuildDate>
-    <atom:link href="https://fc.181861.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1358/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>星际穿越：穿越时空的爱与希望</title>
-      <link>https://fc.181861.xyz/posts/movie-review-interstellar/</link>
+      <link>http://localhost:1358/posts/movie-review-interstellar/</link>
       <pubDate>Sat, 28 Feb 2026 10:00:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
-      <guid>https://fc.181861.xyz/posts/movie-review-interstellar/</guid>
+      <guid>http://localhost:1358/posts/movie-review-interstellar/</guid>
       <description>深度解析克里斯托弗·诺兰的科幻杰作《星际穿越》，探讨其中的科学理论与人文关怀。</description>
     </item>
     <item>
       <title>测试评论系统</title>
-      <link>https://fc.181861.xyz/posts/test-comments/</link>
+      <link>http://localhost:1358/posts/test-comments/</link>
       <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate><author>contact@example.com (第一文明)</author>
-      <guid>https://fc.181861.xyz/posts/test-comments/</guid>
+      <guid>http://localhost:1358/posts/test-comments/</guid>
       <description>测试Giscus评论系统是否正常工作</description>
     </item>
     <item>
       <title>从零到一：我的高颜值数字花园搭建全记录</title>
-      <link>https://fc.181861.xyz/posts/my-blog-setup-guide/</link>
+      <link>http://localhost:1358/posts/my-blog-setup-guide/</link>
       <pubDate>Fri, 27 Feb 2026 21:35:47 +0800</pubDate><author>contact@example.com (第一文明)</author>
-      <guid>https://fc.181861.xyz/posts/my-blog-setup-guide/</guid>
+      <guid>http://localhost:1358/posts/my-blog-setup-guide/</guid>
       <description>详细记录使用 Trae Solo, Hugo (PaperMod), GitHub Pages 和 Cloudflare 打造极致静态博客的全过程，从环境搭建到性能优化。</description>
     </item>
     <item>
       <title>简单生活的幸福：如何在快节奏时代寻找内心的平静</title>
-      <link>https://fc.181861.xyz/posts/simple-life-happiness/</link>
+      <link>http://localhost:1358/posts/simple-life-happiness/</link>
       <pubDate>Fri, 27 Feb 2026 14:30:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
-      <guid>https://fc.181861.xyz/posts/simple-life-happiness/</guid>
+      <guid>http://localhost:1358/posts/simple-life-happiness/</guid>
       <description>在这个快节奏的时代，如何通过简单生活找到内心的平静与幸福。</description>
     </item>
     <item>
       <title>塞尔达传说：王国之泪 - 开放世界游戏设计的新高度</title>
-      <link>https://fc.181861.xyz/posts/game-design-zelda/</link>
+      <link>http://localhost:1358/posts/game-design-zelda/</link>
       <pubDate>Thu, 26 Feb 2026 16:00:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
-      <guid>https://fc.181861.xyz/posts/game-design-zelda/</guid>
+      <guid>http://localhost:1358/posts/game-design-zelda/</guid>
       <description>深度分析《塞尔达传说：王国之泪》的游戏设计理念，探讨其如何重新定义开放世界游戏。</description>
     </item>
     <item>
       <title>人工智能如何改变软件开发：现状与未来</title>
-      <link>https://fc.181861.xyz/posts/ai-in-software-development/</link>
+      <link>http://localhost:1358/posts/ai-in-software-development/</link>
       <pubDate>Wed, 25 Feb 2026 09:00:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
-      <guid>https://fc.181861.xyz/posts/ai-in-software-development/</guid>
+      <guid>http://localhost:1358/posts/ai-in-software-development/</guid>
       <description>探讨人工智能技术如何改变传统的软件开发流程，以及未来的发展趋势。</description>
     </item>
     <item>
       <title>日本旅行全攻略：从东京到京都的完美之旅</title>
-      <link>https://fc.181861.xyz/posts/japan-travel-experience/</link>
+      <link>http://localhost:1358/posts/japan-travel-experience/</link>
       <pubDate>Tue, 24 Feb 2026 11:00:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
-      <guid>https://fc.181861.xyz/posts/japan-travel-experience/</guid>
+      <guid>http://localhost:1358/posts/japan-travel-experience/</guid>
       <description>分享日本旅行的实用攻略，从东京的现代繁华到京都的传统文化，带你体验不一样的日本。</description>
     </item>
   </channel>
