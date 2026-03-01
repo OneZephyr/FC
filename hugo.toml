@@ -43,6 +43,8 @@ theme = "papermod"
     name = "rss"
     url = "/index.xml"
   comments = true
+  defaultTheme = "auto"
+  disableThemeToggle = false
 
 [[menu.main]]
   name = "首页"
