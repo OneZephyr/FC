@@ -20,6 +20,9 @@ theme = "papermod"
   [params.author]
     name = "第一文明"
     email = "contact@example.com"
+  [params.cover]
+    responsiveImages = true  # 启用响应式图片
+    linkFullImages = true    # 允许点击图片查看完整尺寸
   ShowFullText = false
   ShowReadingTime = true
   ShowCodeCopyButtons = true
@@ -81,3 +84,24 @@ theme = "papermod"
   [[related.include]]
     key = "categories"
     weight = 50
+
+
+
+# 构建配置
+[build]
+  publishResources = true    # 确保资源正确发布
+  writeStats = true          # 生成资源统计信息
+
+# 媒体类型配置
+[mediaTypes]
+  [mediaTypes."image/webp"]
+    suffixes = ["webp"]
+
+# 输出格式配置
+[outputFormats]
+  [outputFormats.WebP]
+    baseName = "index"
+    isPlainText = false
+    isHTML = false
+    mediaType = "image/webp"
+    rel = "alternate"
