@@ -44,17 +44,17 @@
                 {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false -}}
                 {{- if not $isHidden -}}
                 {{- with .Params.cover -}}
-                <div class="latest-post-image">
+                <div class="latest-post-image loading">
                     <a href="{{ $post.Permalink }}" aria-label="{{ $post.Title }}">
                         {{- if (not (urls.Parse .image).IsAbs) -}}
                         {{- $cover := $post.Resources.Get .image -}}
                         {{- if $cover -}}
-                        <img src="{{ $cover.Permalink }}" alt="{{ .alt | default $post.Title }}">
+                        <img src="{{ $cover.Permalink }}" alt="{{ .alt | default $post.Title }}" loading="lazy" onload="this.closest('.latest-post-image').classList.remove('loading')">
                         {{- else -}}
-                        <img src="{{ .image | absURL }}" alt="{{ .alt | default $post.Title }}">
+                        <img src="{{ .image | absURL }}" alt="{{ .alt | default $post.Title }}" loading="lazy" onload="this.closest('.latest-post-image').classList.remove('loading')">
                         {{- end -}}
                         {{- else -}}
-                        <img src="{{ .image | absURL }}" alt="{{ .alt | default $post.Title }}">
+                        <img src="{{ .image | absURL }}" alt="{{ .alt | default $post.Title }}" loading="lazy" onload="this.closest('.latest-post-image').classList.remove('loading')">
                         {{- end -}}
                     </a>
                 </div>
