@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>主题跟随系统测试</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        body.light {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        
+        body.dark {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+        
+        .status {
+            margin: 10px 0;
+            padding: 15px;
+            background: #f0f0f0;
+            border-radius: 5px;
+            border-left: 4px solid #165DFF;
+        }
+        
+        .dark .status {
+            background: #2d2d2d;
+            border-left-color: #69B1FF;
+        }
+        
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background: #165DFF;
+            color: white;
+            transition: background-color 0.2s ease;
+        }
+        
+        button:hover {
+            background: #0e47cc;
+        }
+        
+        .dark button {
+            background: #69B1FF;
+        }
+        
+        .dark button:hover {
+            background: #4da3ff;
+        }
+        
+        .test-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+        }
+        
+        .dark .test-section {
+            border-color: #333333;
+        }
+    </style>
+</head>
+<body class="light">
+    <h1>主题跟随系统测试</h1>
+    
+    <div class="test-section">
+        <h2>当前状态</h2>
+        <div class="status" id="system-status">
+            系统主题: <span id="system-theme">检测中...</span><br>
+            网站主题: <span id="site-theme">检测中...</span><br>
+            本地存储: <span id="local-storage">检测中...</span>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>测试控制</h2>
+        <button onclick="checkStatus()">检查状态</button>
+        <button onclick="clearStorage()">清除本地存储</button>
+        <button onclick="reloadPage()">重新加载页面</button>
+    </div>
+    
+    <div class="test-section">
+        <h2>测试说明</h2>
+        <p>1. 点击"检查状态"按钮查看当前状态</p>
+        <p>2. 点击"清除本地存储"按钮确保没有主题偏好设置</p>
+        <p>3. 更改系统的主题设置（浅色/深色）</p>
+        <p>4. 观察网站主题是否自动跟随变化</p>
+        <p>5. 如果网站主题没有变化，请刷新页面后再次尝试</p>
+    </div>
+    
+    <script>
+        // 检测系统主题
+        function getSystemTheme() {
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        
+        // 检测网站主题
+        function getSiteTheme() {
+            const html = document.querySelector("html");
+            return html.dataset.theme || 'light';
+        }
+        
+        // 检测本地存储
+        function getLocalStorage() {
+            return localStorage.getItem('pref-theme') || '无';
+        }
+        
+        // 更新状态显示
+        function updateStatus() {
+            document.getElementById('system-theme').textContent = getSystemTheme();
+            document.getElementById('site-theme').textContent = getSiteTheme();
+            document.getElementById('local-storage').textContent = getLocalStorage();
+            
+            // 更新测试页面的主题
+            document.body.className = getSiteTheme();
+        }
+        
+        // 检查状态
+        function checkStatus() {
+            updateStatus();
+        }
+        
+        // 清除本地存储
+        function clearStorage() {
+            localStorage.removeItem('pref-theme');
+            updateStatus();
+            alert('已清除本地存储中的主题偏好设置');
+        }
+        
+        // 重新加载页面
+        function reloadPage() {
+            location.reload();
+        }
+        
+        // 监听系统主题变化
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            const newTheme = e.matches ? 'dark' : 'light';
+            console.log('系统主题变化为:', newTheme);
+            
+            // 只有在没有本地存储偏好时才跟随系统
+            if (!localStorage.getItem('pref-theme')) {
+                document.querySelector("html").dataset.theme = newTheme;
+                console.log('网站主题已更新为:', newTheme);
+                updateStatus();
+            } else {
+                console.log('有本地存储偏好，不跟随系统主题变化');
+            }
+        });
+        
+        // 初始化页面
+        window.onload = function() {
+            // 模拟网站的主题初始化逻辑
+            if (localStorage.getItem("pref-theme") === "dark") {
+                document.querySelector("html").dataset.theme = 'dark';
+            } else if (localStorage.getItem("pref-theme") === "light") {
+                document.querySelector("html").dataset.theme = 'light';
+            } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.querySelector("html").dataset.theme = 'dark';
+            } else {
+                document.querySelector("html").dataset.theme = 'light';
+            }
+            
+            updateStatus();
+            console.log('页面初始化完成');
+        };
+    </script>
+</body>
+</html>

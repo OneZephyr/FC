@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>检查本地存储</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        button { padding: 10px; margin: 5px; cursor: pointer; }
+        .status { margin: 10px 0; padding: 10px; background: #f0f0f0; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>检查和清除本地存储</h1>
+    
+    <div class="status" id="storage-status">
+        点击按钮检查本地存储状态
+    </div>
+    
+    <button onclick="checkStorage()">检查本地存储</button>
+    <button onclick="clearStorage()">清除主题偏好设置</button>
+    <button onclick="reloadPage()">重新加载页面</button>
+    
+    <script>
+        function checkStorage() {
+            const prefTheme = localStorage.getItem('pref-theme');
+            const statusDiv = document.getElementById('storage-status');
+            
+            if (prefTheme) {
+                statusDiv.innerHTML = `本地存储中有主题偏好设置: ${prefTheme}`;
+                statusDiv.style.background = '#fff3cd';
+            } else {
+                statusDiv.innerHTML = '本地存储中没有主题偏好设置，应该跟随系统主题';
+                statusDiv.style.background = '#d4edda';
+            }
+        }
+        
+        function clearStorage() {
+            localStorage.removeItem('pref-theme');
+            const statusDiv = document.getElementById('storage-status');
+            statusDiv.innerHTML = '已清除主题偏好设置';
+            statusDiv.style.background = '#d4edda';
+        }
+        
+        function reloadPage() {
+            location.reload();
+        }
+        
+        // 页面加载时自动检查
+        window.onload = checkStorage;
+    </script>
+</body>
+</html>
