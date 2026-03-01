@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>测试 on 第一文明</title>
-    <link>http://localhost:2363/tags/%E6%B5%8B%E8%AF%95/</link>
+    <link>http://localhost:6039/tags/%E6%B5%8B%E8%AF%95/</link>
     <description>Recent content in 测试 on 第一文明</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>zh-cn</language>
     <managingEditor>contact@example.com (第一文明)</managingEditor>
     <webMaster>contact@example.com (第一文明)</webMaster>
     <lastBuildDate>Sat, 28 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:2363/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:6039/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>测试评论系统</title>
-      <link>http://localhost:2363/posts/test-comments/</link>
+      <link>http://localhost:6039/posts/test-comments/</link>
       <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate><author>contact@example.com (第一文明)</author>
-      <guid>http://localhost:2363/posts/test-comments/</guid>
+      <guid>http://localhost:6039/posts/test-comments/</guid>
       <description>测试Giscus评论系统是否正常工作</description>
     </item>
   </channel>

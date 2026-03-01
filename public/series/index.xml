@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>系列 on 第一文明</title>
-    <link>http://localhost:2363/series/</link>
+    <link>http://localhost:6039/series/</link>
     <description>Recent content in 系列 on 第一文明</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>zh-cn</language>
     <managingEditor>contact@example.com (第一文明)</managingEditor>
     <webMaster>contact@example.com (第一文明)</webMaster>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:2363/series/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:6039/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
