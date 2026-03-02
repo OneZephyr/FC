@@ -3,6 +3,7 @@
         <h2></h2>
         <div class="latest-posts-list">
             {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections -}}
+            {{- $pages := $pages.ByDate.Reverse -}}
             {{- range $pages -}}
             <div class="latest-post-item">
                 {{- $post := . -}}
