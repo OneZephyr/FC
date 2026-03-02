@@ -1,4 +1,4 @@
-baseURL = "localhost:1313"
+baseURL = "http://localhost:1313/"
 languageCode = "zh-cn"
 title = "第一文明"
 theme = "papermod"
@@ -96,7 +96,7 @@ theme = "papermod"
   buildFuture = true         # 构建未来日期的文章
 
 # 分页配置
-paginate = 50
+paginate = 20
 
 # 媒体类型配置
 [mediaTypes]
