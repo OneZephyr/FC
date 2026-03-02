@@ -1,4 +1,4 @@
-baseURL = "https://fc.181861.xyz"
+baseURL = "localhost:1313"
 languageCode = "zh-cn"
 title = "第一文明"
 theme = "papermod"
@@ -93,6 +93,7 @@ theme = "papermod"
 [build]
   publishResources = true    # 确保资源正确发布
   writeStats = true          # 生成资源统计信息
+  buildFuture = true         # 构建未来日期的文章
 
 # 分页配置
 paginate = 50

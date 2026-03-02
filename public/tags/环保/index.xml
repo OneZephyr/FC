@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>环保 on 第一文明</title>
-    <link>https://fc.181861.xyz/tags/%E7%8E%AF%E4%BF%9D/</link>
+    <link>//localhost:14968/tags/%E7%8E%AF%E4%BF%9D/</link>
     <description>Recent content in 环保 on 第一文明</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>zh-cn</language>
     <managingEditor>contact@example.com (第一文明)</managingEditor>
     <webMaster>contact@example.com (第一文明)</webMaster>
     <lastBuildDate>Mon, 02 Mar 2026 10:00:00 +0800</lastBuildDate>
-    <atom:link href="https://fc.181861.xyz/tags/%E7%8E%AF%E4%BF%9D/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:14968/tags/%E7%8E%AF%E4%BF%9D/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>城市与自然的平衡：在钢筋水泥中寻找绿色</title>
-      <link>https://fc.181861.xyz/posts/city-nature-balance/</link>
+      <link>//localhost:14968/posts/city-nature-balance/</link>
       <pubDate>Mon, 02 Mar 2026 10:00:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
-      <guid>https://fc.181861.xyz/posts/city-nature-balance/</guid>
+      <guid>//localhost:14968/posts/city-nature-balance/</guid>
       <description>探讨如何在城市生活中保持与自然的联系，实现城市与自然的平衡。</description>
     </item>
   </channel>
