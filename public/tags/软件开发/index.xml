@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>软件开发 on 第一文明</title>
-    <link>http://localhost:6039/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/</link>
+    <link>http://localhost:5733/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/</link>
     <description>Recent content in 软件开发 on 第一文明</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>zh-cn</language>
     <managingEditor>contact@example.com (第一文明)</managingEditor>
     <webMaster>contact@example.com (第一文明)</webMaster>
     <lastBuildDate>Wed, 25 Feb 2026 09:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:6039/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:5733/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>人工智能如何改变软件开发：现状与未来</title>
-      <link>http://localhost:6039/posts/ai-in-software-development/</link>
+      <link>http://localhost:5733/posts/ai-in-software-development/</link>
       <pubDate>Wed, 25 Feb 2026 09:00:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
-      <guid>http://localhost:6039/posts/ai-in-software-development/</guid>
+      <guid>http://localhost:5733/posts/ai-in-software-development/</guid>
       <description>探讨人工智能技术如何改变传统的软件开发流程，以及未来的发展趋势。</description>
     </item>
   </channel>

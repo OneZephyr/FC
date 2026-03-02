@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>幸福 on 第一文明</title>
-    <link>http://localhost:6039/tags/%E5%B9%B8%E7%A6%8F/</link>
+    <link>http://localhost:5733/tags/%E5%B9%B8%E7%A6%8F/</link>
     <description>Recent content in 幸福 on 第一文明</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>zh-cn</language>
     <managingEditor>contact@example.com (第一文明)</managingEditor>
     <webMaster>contact@example.com (第一文明)</webMaster>
     <lastBuildDate>Fri, 27 Feb 2026 14:30:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:6039/tags/%E5%B9%B8%E7%A6%8F/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:5733/tags/%E5%B9%B8%E7%A6%8F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>简单生活的幸福：如何在快节奏时代寻找内心的平静</title>
-      <link>http://localhost:6039/posts/simple-life-happiness/</link>
+      <link>http://localhost:5733/posts/simple-life-happiness/</link>
       <pubDate>Fri, 27 Feb 2026 14:30:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
-      <guid>http://localhost:6039/posts/simple-life-happiness/</guid>
+      <guid>http://localhost:5733/posts/simple-life-happiness/</guid>
       <description>在这个快节奏的时代，如何通过简单生活找到内心的平静与幸福。</description>
     </item>
   </channel>

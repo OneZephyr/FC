@@ -781,6 +781,20 @@ body:not(.list) .post-content img {
     font-size: 0.8rem;
 }
 
+/* 两列布局样式 */
+.post-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* 确保文章卡片在两列布局中正确显示 */
+.post-list-grid .post-entry {
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+
 /* 响应式布局优化 */
 /* RSS链接样式 */
 .latest-posts h2 a {
@@ -814,6 +828,11 @@ body:not(.list) .post-content img {
     
     .main {
         margin-top: 2rem;
+    }
+    
+    .post-list-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
     
     .latest-post-item {
