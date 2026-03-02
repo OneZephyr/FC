@@ -94,6 +94,9 @@ theme = "papermod"
   publishResources = true    # 确保资源正确发布
   writeStats = true          # 生成资源统计信息
 
+# 分页配置
+paginate = 50
+
 # 媒体类型配置
 [mediaTypes]
   [mediaTypes."image/webp"]

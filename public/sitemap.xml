@@ -2,123 +2,240 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://fc.181861.xyz/posts/</loc>
+    <lastmod>2026-03-12T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/</loc>
+    <lastmod>2026-03-12T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E5%86%A5%E6%83%B3/</loc>
+    <lastmod>2026-03-12T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E5%BF%83%E7%90%86%E5%81%A5%E5%BA%B7/</loc>
+    <lastmod>2026-03-12T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E6%AD%A3%E5%BF%B5/</loc>
+    <lastmod>2026-03-12T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/posts/mindfulness-practice/</loc>
+    <lastmod>2026-03-12T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/</loc>
+    <lastmod>2026-03-11T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2026-03-11T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/posts/learning-new-skills/</loc>
+    <lastmod>2026-03-11T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E6%8A%80%E8%83%BD/</loc>
+    <lastmod>2026-03-11T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E5%81%A5%E5%BA%B7/</loc>
+    <lastmod>2026-03-10T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/posts/healthy-eating/</loc>
+    <lastmod>2026-03-10T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E7%94%9F%E6%B4%BB%E6%96%B9%E5%BC%8F/</loc>
+    <lastmod>2026-03-10T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E9%A5%AE%E9%A3%9F/</loc>
+    <lastmod>2026-03-10T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E6%9C%AA%E6%9D%A5/</loc>
+    <lastmod>2026-03-09T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/posts/future-test/</loc>
+    <lastmod>2026-03-09T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2026-03-09T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E7%A7%91%E6%8A%80/</loc>
+    <lastmod>2026-03-09T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E5%88%9B%E4%B8%9A/</loc>
+    <lastmod>2026-03-08T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/posts/entrepreneurship-innovation/</loc>
+    <lastmod>2026-03-08T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E5%88%9B%E6%96%B0/</loc>
+    <lastmod>2026-03-08T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E5%95%86%E4%B8%9A/</loc>
+    <lastmod>2026-03-08T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E6%95%99%E8%82%B2/</loc>
+    <lastmod>2026-03-07T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/posts/education-future/</loc>
+    <lastmod>2026-03-07T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF%E4%BF%9D%E6%8A%A4/</loc>
+    <lastmod>2026-03-06T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E6%95%B0%E5%AD%97%E9%9A%90%E7%A7%81/</loc>
+    <lastmod>2026-03-06T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/posts/digital-privacy/</loc>
+    <lastmod>2026-03-06T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</loc>
+    <lastmod>2026-03-06T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E6%95%B0%E5%AD%97%E6%9E%81%E7%AE%80%E4%B8%BB%E4%B9%89/</loc>
+    <lastmod>2026-03-05T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/posts/digital-minimalism/</loc>
+    <lastmod>2026-03-05T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E5%A4%9A%E6%A0%B7%E6%80%A7/</loc>
+    <lastmod>2026-03-04T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E6%96%87%E5%8C%96/</loc>
+    <lastmod>2026-03-04T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/posts/cultural-diversity/</loc>
+    <lastmod>2026-03-04T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E7%A4%BE%E4%BC%9A/</loc>
+    <lastmod>2026-03-04T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/ai/</loc>
+    <lastmod>2026-03-03T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/posts/ai-test/</loc>
+    <lastmod>2026-03-03T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2026-03-03T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E5%9F%8E%E5%B8%82/</loc>
+    <lastmod>2026-03-02T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/posts/city-nature-balance/</loc>
+    <lastmod>2026-03-02T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E7%8E%AF%E4%BF%9D/</loc>
+    <lastmod>2026-03-02T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2026-03-02T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E8%87%AA%E7%84%B6/</loc>
+    <lastmod>2026-03-02T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E5%88%9B%E9%80%A0%E5%8A%9B/</loc>
+    <lastmod>2026-03-01T14:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E8%89%BA%E6%9C%AF/</loc>
+    <lastmod>2026-03-01T14:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/posts/art-creativity/</loc>
+    <lastmod>2026-03-01T14:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://fc.181861.xyz/tags/%E6%96%B0%E5%8A%9F%E8%83%BD/</loc>
     <lastmod>2026-03-01T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://fc.181861.xyz/posts/new-test/</loc>
     <lastmod>2026-03-01T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E6%96%B0%E5%8A%9F%E8%83%BD/</loc>
-    <lastmod>2026-03-01T10:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/new-test/</loc>
-    <lastmod>2026-03-01T10:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2026-03-01T10:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/another-test/</loc>
+    <loc>https://fc.181861.xyz/posts/another-test/</loc>
     <lastmod>2026-02-28T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://fc.181861.xyz/posts/movie-review-interstellar/</loc>
     <lastmod>2026-02-28T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/movie-review-interstellar/</loc>
+    <loc>https://fc.181861.xyz/tags/%E7%94%B5%E5%BD%B1/</loc>
     <lastmod>2026-02-28T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E7%94%B5%E5%BD%B1/</loc>
+    <loc>https://fc.181861.xyz/tags/%E7%A7%91%E5%B9%BB/</loc>
     <lastmod>2026-02-28T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E7%A7%91%E5%B9%BB/</loc>
+    <loc>https://fc.181861.xyz/tags/%E8%AF%BA%E5%85%B0/</loc>
     <lastmod>2026-02-28T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E8%AF%BA%E5%85%B0/</loc>
-    <lastmod>2026-02-28T10:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/test-comments/</loc>
+    <loc>https://fc.181861.xyz/posts/test-comments/</loc>
     <lastmod>2026-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</loc>
+    <loc>https://fc.181861.xyz/tags/%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2026-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://fc.181861.xyz/about/</loc>
     <lastmod>2026-02-28T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archives/</loc>
+    <loc>https://fc.181861.xyz/archives/</loc>
     <lastmod>2026-02-28T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>https://fc.181861.xyz/search/</loc>
     <lastmod>2026-02-28T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://fc.181861.xyz/</loc>
     <lastmod>2026-02-28T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://fc.181861.xyz/series/</loc>
     <lastmod>2026-02-28T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/blog/</loc>
+    <loc>https://fc.181861.xyz/tags/blog/</loc>
     <lastmod>2026-02-27T21:35:47+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cloudflare/</loc>
+    <loc>https://fc.181861.xyz/tags/cloudflare/</loc>
     <lastmod>2026-02-27T21:35:47+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
+    <loc>https://fc.181861.xyz/tags/hugo/</loc>
     <lastmod>2026-02-27T21:35:47+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/trae/</loc>
+    <loc>https://fc.181861.xyz/tags/trae/</loc>
     <lastmod>2026-02-27T21:35:47+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/my-blog-setup-guide/</loc>
+    <loc>https://fc.181861.xyz/posts/my-blog-setup-guide/</loc>
     <lastmod>2026-02-27T21:35:47+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E5%B9%B8%E7%A6%8F/</loc>
+    <loc>https://fc.181861.xyz/tags/%E5%B9%B8%E7%A6%8F/</loc>
     <lastmod>2026-02-27T14:30:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E6%9E%81%E7%AE%80%E4%B8%BB%E4%B9%89/</loc>
+    <loc>https://fc.181861.xyz/tags/%E6%9E%81%E7%AE%80%E4%B8%BB%E4%B9%89/</loc>
     <lastmod>2026-02-27T14:30:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E7%94%9F%E6%B4%BB/</loc>
+    <loc>https://fc.181861.xyz/posts/simple-life-happiness/</loc>
     <lastmod>2026-02-27T14:30:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/simple-life-happiness/</loc>
-    <lastmod>2026-02-27T14:30:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4/</loc>
+    <loc>https://fc.181861.xyz/tags/%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4/</loc>
     <lastmod>2026-02-26T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/game-design-zelda/</loc>
+    <loc>https://fc.181861.xyz/posts/game-design-zelda/</loc>
     <lastmod>2026-02-26T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/</loc>
+    <loc>https://fc.181861.xyz/tags/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/</loc>
     <lastmod>2026-02-26T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E6%B8%B8%E6%88%8F/</loc>
+    <loc>https://fc.181861.xyz/tags/%E6%B8%B8%E6%88%8F/</loc>
     <lastmod>2026-02-26T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/it/</loc>
+    <loc>https://fc.181861.xyz/tags/it/</loc>
     <lastmod>2026-02-25T09:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
+    <loc>https://fc.181861.xyz/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
     <lastmod>2026-02-25T09:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/ai-in-software-development/</loc>
+    <loc>https://fc.181861.xyz/posts/ai-in-software-development/</loc>
     <lastmod>2026-02-25T09:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/</loc>
+    <loc>https://fc.181861.xyz/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2026-02-25T09:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E6%96%87%E5%8C%96/</loc>
+    <loc>https://fc.181861.xyz/tags/%E6%97%85%E8%A1%8C/</loc>
     <lastmod>2026-02-24T11:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E6%97%85%E8%A1%8C/</loc>
+    <loc>https://fc.181861.xyz/tags/%E6%97%A5%E6%9C%AC/</loc>
     <lastmod>2026-02-24T11:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E6%97%A5%E6%9C%AC/</loc>
+    <loc>https://fc.181861.xyz/posts/japan-travel-experience/</loc>
     <lastmod>2026-02-24T11:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/japan-travel-experience/</loc>
-    <lastmod>2026-02-24T11:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://fc.181861.xyz/categories/</loc>
   </url>
 </urlset>

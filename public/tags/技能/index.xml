@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>技能 on 第一文明</title>
+    <link>https://fc.181861.xyz/tags/%E6%8A%80%E8%83%BD/</link>
+    <description>Recent content in 技能 on 第一文明</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>zh-cn</language>
+    <managingEditor>contact@example.com (第一文明)</managingEditor>
+    <webMaster>contact@example.com (第一文明)</webMaster>
+    <lastBuildDate>Wed, 11 Mar 2026 10:00:00 +0800</lastBuildDate>
+    <atom:link href="https://fc.181861.xyz/tags/%E6%8A%80%E8%83%BD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>学习新技能：开启个人成长的钥匙</title>
+      <link>https://fc.181861.xyz/posts/learning-new-skills/</link>
+      <pubDate>Wed, 11 Mar 2026 10:00:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
+      <guid>https://fc.181861.xyz/posts/learning-new-skills/</guid>
+      <description>探讨学习新技能的重要性、方法和挑战，以及如何在快速变化的世界中持续学习和成长。</description>
+    </item>
+  </channel>
+</rss>
