@@ -308,27 +308,60 @@ img {
     }
 }
 
-/* 跳转到底部按钮样式 */
+/* 跳转到底部按钮样式 - 调整位置，与顶部按钮对调并分开 */
 #bottom-link {
-    bottom: 100px;
+    bottom: 20px;
+}
+
+#top-link {
+    bottom: 80px;
 }
 
 /* 响应式调整 */
 @media (max-width: 768px) {
     #bottom-link {
-        bottom: 90px;
+        bottom: 15px;
+    }
+    #top-link {
+        bottom: 70px;
     }
 }
 
 @media (max-width: 480px) {
     #bottom-link {
-        bottom: 80px;
+        bottom: 10px;
+    }
+    #top-link {
+        bottom: 60px;
     }
 }
 
 /* 代码块样式优化 */
 pre {
     border-radius: 6px;
+}
+
+/* 页脚样式优化 - 使所有元素显示在同一行 */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    line-height: 1;
+    gap: 0.5rem;
+}
+
+.footer span {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    white-space: nowrap;
+}
+
+.footer span a {
+    display: inline;
+    white-space: nowrap;
 }
 
 /* 按钮样式优化 */
@@ -915,14 +948,6 @@ body:not(.list) .post-content img {
 .footer-profile-links .social-icons {
     display: flex;
     gap: 0.3rem;
-}
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-    text-align: center;
 }
 
 .footer-top {
