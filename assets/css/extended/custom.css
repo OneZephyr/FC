@@ -300,10 +300,29 @@ img {
     }
 }
 
+/* 响应式设计 */
 @media (max-width: 480px) {
     .post-toggle-btn {
         padding: 0.5rem 1rem;
         font-size: 0.75rem;
+    }
+}
+
+/* 跳转到底部按钮样式 */
+#bottom-link {
+    bottom: 100px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    #bottom-link {
+        bottom: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    #bottom-link {
+        bottom: 80px;
     }
 }
 
