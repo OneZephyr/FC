@@ -4,8 +4,11 @@
         <div class="latest-posts-list">
             {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections -}}
             {{- $pages := $pages.ByDate.Reverse -}}
-            {{- range $pages -}}
-            <div class="latest-post-item">
+            {{- $totalPosts := len $pages -}}
+            {{- $showPosts := 8 -}}
+            {{- $remainingPosts := sub $totalPosts $showPosts -}}
+            {{- range $index, $page := $pages -}}
+            <div class="latest-post-item {{ if gt $index (sub $showPosts 1) }}post-item-hidden{{ end }}" {{ if gt $index (sub $showPosts 1) }}style="display: none;"{{ end }}>
                 {{- $post := . -}}
                 <div class="latest-post-content">
                     <h3><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h3>
@@ -64,5 +67,46 @@
             </div>
             {{- end -}}
         </div>
+        {{- if gt $remainingPosts 0 -}}
+        <div class="post-toggle-container">
+            <button id="post-toggle-btn" class="post-toggle-btn">
+                显示更多 {{ $remainingPosts }} 篇文章
+            </button>
+        </div>
+        {{- end -}}
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleBtn = document.getElementById('post-toggle-btn');
+            const hiddenPosts = document.querySelectorAll('.post-item-hidden');
+            const remainingPosts = {{ $remainingPosts }};
+            let isExpanded = false;
+            
+            if (toggleBtn) {
+                toggleBtn.addEventListener('click', function() {
+                    isExpanded = !isExpanded;
+                    
+                    hiddenPosts.forEach(post => {
+                        if (isExpanded) {
+                            post.style.display = 'flex';
+                            post.style.opacity = '1';
+                            post.style.height = 'auto';
+                        } else {
+                            post.style.opacity = '0';
+                            post.style.height = '0';
+                            setTimeout(() => {
+                                post.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                    
+                    if (isExpanded) {
+                        toggleBtn.textContent = '显示更少';
+                    } else {
+                        toggleBtn.textContent = '显示更多 ' + remainingPosts + ' 篇文章';
+                    }
+                });
+            }
+        });
+    </script>
 

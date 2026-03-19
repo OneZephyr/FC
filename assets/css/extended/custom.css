@@ -254,6 +254,59 @@ img {
     loading: lazy;
 }
 
+/* 文章折叠功能样式 */
+.post-item-hidden {
+    display: none;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.post-toggle-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.post-toggle-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-toggle-btn:hover {
+    background: var(--secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.post-toggle-btn:active {
+    transform: translateY(0);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .post-toggle-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-toggle-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
+}
+
 /* 代码块样式优化 */
 pre {
     border-radius: 6px;
