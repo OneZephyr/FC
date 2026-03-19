@@ -4,12 +4,19 @@
     <title>创新 on 第一文明</title>
     <link>http://localhost:1313/tags/%E5%88%9B%E6%96%B0/</link>
     <description>Recent content in 创新 on 第一文明</description>
-    <generator>Hugo -- 0.155.3</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <managingEditor>contact@example.com (第一文明)</managingEditor>
     <webMaster>contact@example.com (第一文明)</webMaster>
-    <lastBuildDate>Mon, 02 Mar 2026 13:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2026 10:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/%E5%88%9B%E6%96%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>创业与创新：打造未来商业的引擎</title>
+      <link>http://localhost:1313/posts/entrepreneurship-innovation/</link>
+      <pubDate>Sun, 08 Mar 2026 10:00:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
+      <guid>http://localhost:1313/posts/entrepreneurship-innovation/</guid>
+      <description>探讨创业与创新的关系，以及如何在当今快速变化的世界中培养创业精神和创新能力。</description>
+    </item>
     <item>
       <title>教育创新与未来学习方式的探索</title>
       <link>http://localhost:1313/posts/education-innovation/</link>

@@ -4,12 +4,82 @@
     <title>第一文明</title>
     <link>http://localhost:1313/</link>
     <description>Recent content on 第一文明</description>
-    <generator>Hugo -- 0.155.3</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <managingEditor>contact@example.com (第一文明)</managingEditor>
     <webMaster>contact@example.com (第一文明)</webMaster>
-    <lastBuildDate>Mon, 02 Mar 2026 23:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2026 10:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>正念练习：活在当下的艺术</title>
+      <link>http://localhost:1313/posts/mindfulness-practice/</link>
+      <pubDate>Thu, 12 Mar 2026 10:00:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
+      <guid>http://localhost:1313/posts/mindfulness-practice/</guid>
+      <description>探讨正念练习的重要性、方法和好处，以及如何通过正念练习改善心理健康和生活质量。</description>
+    </item>
+    <item>
+      <title>学习新技能：开启个人成长的钥匙</title>
+      <link>http://localhost:1313/posts/learning-new-skills/</link>
+      <pubDate>Wed, 11 Mar 2026 10:00:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
+      <guid>http://localhost:1313/posts/learning-new-skills/</guid>
+      <description>探讨学习新技能的重要性、方法和挑战，以及如何在快速变化的世界中持续学习和成长。</description>
+    </item>
+    <item>
+      <title>健康饮食：通往健康生活的桥梁</title>
+      <link>http://localhost:1313/posts/healthy-eating/</link>
+      <pubDate>Tue, 10 Mar 2026 10:00:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
+      <guid>http://localhost:1313/posts/healthy-eating/</guid>
+      <description>探讨健康饮食的重要性、原则和实践方法，以及如何通过健康饮食改善生活质量。</description>
+    </item>
+    <item>
+      <title>未来测试：探索科技的边界</title>
+      <link>http://localhost:1313/posts/future-test/</link>
+      <pubDate>Mon, 09 Mar 2026 10:00:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
+      <guid>http://localhost:1313/posts/future-test/</guid>
+      <description>探讨未来测试的发展趋势、技术创新以及如何应对未来测试的挑战。</description>
+    </item>
+    <item>
+      <title>创业与创新：打造未来商业的引擎</title>
+      <link>http://localhost:1313/posts/entrepreneurship-innovation/</link>
+      <pubDate>Sun, 08 Mar 2026 10:00:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
+      <guid>http://localhost:1313/posts/entrepreneurship-innovation/</guid>
+      <description>探讨创业与创新的关系，以及如何在当今快速变化的世界中培养创业精神和创新能力。</description>
+    </item>
+    <item>
+      <title>未来教育：科技与教育的融合</title>
+      <link>http://localhost:1313/posts/education-future/</link>
+      <pubDate>Sat, 07 Mar 2026 10:00:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
+      <guid>http://localhost:1313/posts/education-future/</guid>
+      <description>探讨科技如何改变教育，以及未来教育的发展趋势和挑战。</description>
+    </item>
+    <item>
+      <title>数字隐私：在数字时代保护个人信息</title>
+      <link>http://localhost:1313/posts/digital-privacy/</link>
+      <pubDate>Fri, 06 Mar 2026 10:00:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
+      <guid>http://localhost:1313/posts/digital-privacy/</guid>
+      <description>探讨数字隐私的重要性、面临的威胁以及如何在数字时代保护个人信息。</description>
+    </item>
+    <item>
+      <title>数字极简主义：在数字时代找回生活的平衡</title>
+      <link>http://localhost:1313/posts/digital-minimalism/</link>
+      <pubDate>Thu, 05 Mar 2026 10:00:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
+      <guid>http://localhost:1313/posts/digital-minimalism/</guid>
+      <description>探讨数字极简主义的概念、重要性和实践方法，以及如何在数字时代找回生活的平衡。</description>
+    </item>
+    <item>
+      <title>文化多样性：连接世界的桥梁</title>
+      <link>http://localhost:1313/posts/cultural-diversity/</link>
+      <pubDate>Wed, 04 Mar 2026 10:00:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
+      <guid>http://localhost:1313/posts/cultural-diversity/</guid>
+      <description>探讨文化多样性的重要性、挑战和机遇，以及如何在全球化时代促进文化交流与理解。</description>
+    </item>
+    <item>
+      <title>AI测试：探索人工智能的边界</title>
+      <link>http://localhost:1313/posts/ai-test/</link>
+      <pubDate>Tue, 03 Mar 2026 10:00:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
+      <guid>http://localhost:1313/posts/ai-test/</guid>
+      <description>探讨AI测试的重要性、方法和挑战，以及如何确保AI系统的可靠性和安全性。</description>
+    </item>
     <item>
       <title>未来交通与智慧城市的发展</title>
       <link>http://localhost:1313/posts/future-transport-smart-city/</link>

@@ -52,10 +52,10 @@
                         {{- if $cover -}}
                         <img src="{{ $cover.Permalink }}" alt="{{ .alt | default $post.Title }}" loading="lazy" onload="this.closest('.latest-post-image').classList.remove('loading')">
                         {{- else -}}
-                        <img src="{{ .image | absURL }}" alt="{{ .alt | default $post.Title }}" loading="lazy" onload="this.closest('.latest-post-image').classList.remove('loading')">
+                        <img src="{{ $post.RelPermalink }}{{ .image }}" alt="{{ .alt | default $post.Title }}" loading="lazy" onload="this.closest('.latest-post-image').classList.remove('loading')">
                         {{- end -}}
                         {{- else -}}
-                        <img src="{{ .image | absURL }}" alt="{{ .alt | default $post.Title }}" loading="lazy" onload="this.closest('.latest-post-image').classList.remove('loading')">
+                        <img src="{{ .image }}" alt="{{ .alt | default $post.Title }}" loading="lazy" onload="this.closest('.latest-post-image').classList.remove('loading')">
                         {{- end -}}
                     </a>
                 </div>

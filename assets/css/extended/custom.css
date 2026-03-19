@@ -135,7 +135,7 @@ body {
 }
 
 /* 卡片样式优化 */
-/* 优化文章条目布局 - 紧凑设计 */
+/* 优化文章条目布局 - 两列布局带图片 */
 .post-entry {
     position: relative;
     padding: 1rem;
@@ -144,14 +144,26 @@ body {
     transition: all 0.3s ease;
     border: 1px solid var(--border);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    margin: 0;
+    margin: 0 0 2rem 0;
     height: auto;
     min-height: unset;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    width: 100%;
+    break-inside: avoid;
+    page-break-inside: avoid;
 }
 
 .post-entry:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* 文章内容区域 */
+.post-entry .entry-content-wrapper {
+    flex: 1;
+    min-width: 0;
 }
 
 /* 优化条目内容间距 */
@@ -182,9 +194,64 @@ body {
     font-size: 0.8rem;
 }
 
-/* 优化封面图片间距 */
+/* 优化封面图片 - 文章列表页 */
 .entry-cover {
-    margin-bottom: 0.75rem;
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 0 1rem 0;
+    position: relative;
+    background: var(--code-block-bg);
+}
+
+.entry-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    border-radius: 8px;
+}
+
+/* 图片悬停效果 */
+.post-entry:hover .entry-cover img {
+    transform: scale(1.08);
+}
+
+/* 文章页面封面图片 */
+.single .entry-cover {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.single .entry-cover img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* 文章内容区域图片优化 */
+.post-content img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* 图片懒加载 */
+img {
+    loading: lazy;
 }
 
 /* 代码块样式优化 */

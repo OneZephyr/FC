@@ -4,12 +4,26 @@
     <title>测试 on 第一文明</title>
     <link>http://localhost:1313/tags/%E6%B5%8B%E8%AF%95/</link>
     <description>Recent content in 测试 on 第一文明</description>
-    <generator>Hugo -- 0.155.3</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <managingEditor>contact@example.com (第一文明)</managingEditor>
     <webMaster>contact@example.com (第一文明)</webMaster>
-    <lastBuildDate>Sun, 01 Mar 2026 10:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2026 10:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>未来测试：探索科技的边界</title>
+      <link>http://localhost:1313/posts/future-test/</link>
+      <pubDate>Mon, 09 Mar 2026 10:00:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
+      <guid>http://localhost:1313/posts/future-test/</guid>
+      <description>探讨未来测试的发展趋势、技术创新以及如何应对未来测试的挑战。</description>
+    </item>
+    <item>
+      <title>AI测试：探索人工智能的边界</title>
+      <link>http://localhost:1313/posts/ai-test/</link>
+      <pubDate>Tue, 03 Mar 2026 10:00:00 +0800</pubDate><author>contact@example.com (第一文明)</author>
+      <guid>http://localhost:1313/posts/ai-test/</guid>
+      <description>探讨AI测试的重要性、方法和挑战，以及如何确保AI系统的可靠性和安全性。</description>
+    </item>
     <item>
       <title>新测试文章</title>
       <link>http://localhost:1313/posts/new-test/</link>
